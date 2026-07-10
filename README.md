@@ -39,4 +39,29 @@ The project demonstrates advanced CSS positioning techniques:
 └── index.html        # Main HTML structure
 ---
 
+ How to Run Locally
 
+Follow these simple steps to get the project up and running on your local machine:
+1. Clone the Repository
+
+Run the following command in your terminal to clone the project:
+Bash
+
+git clone https://github.com/ByteBloom357/AVTR.git
+
+2. Navigate to the Project Folder
+
+Switch to the project directory:
+Bash
+
+cd AVTR
+
+3. Open the Project
+
+    Method 1: Simply locate the index.html file in your folder and double-click it to open it in any web browser.
+
+    Method 2 (Recommended): If you are using VS Code, install the Live Server extension, right-click on index.html, and select "Open with Live Server".
+
+License
+
+This project is open-source and available under the MIT License. Feel free to use, modify, and share it!
