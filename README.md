@@ -1,68 +1,88 @@
-# AVTR — Futuristic Landing Page
+# Mercedes-Benz VISION AVTR — Landing Page
 
-A sleek, responsive landing page dedicated to the concept car **Mercedes-Benz VISION AVTR** (inspired by the movie *Avatar*). This project focuses on modern CSS layouts, semantic HTML, and fluid responsiveness.
-
----
+A responsive single-page layout dedicated to the **Mercedes-Benz VISION AVTR** concept car, inspired by James Cameron's "Avatar". Built with pure HTML5 and CSS3, no frameworks.
 
 ##  Demo
-*(Feel free to insert your live GitHub Pages or Vercel link here)*
 
-##  Features
-* **Modern Layouts:** Built using a combination of **CSS Grid** for the design gallery and **Flexbox** for alignment and navigation.
-* **Fully Responsive:** Perfectly optimized for all screen sizes, from wide desktop monitors down to mobile devices ($1240\text{px}$, $1000\text{px}$, $640\text{px}$, and $430\text{px}$ breakpoints).
-* **Smooth Animations:** Clean hover transitions on social media icons, buttons, and custom SVG links.
-* **Semantic HTML5:** Structured with standard elements (`<header>`, `<main>`, `<section>`, `<footer>`) for better SEO and accessibility.
+> Add your live link here once deployed via GitHub Pages:
+> `https://<your-username>.github.io/<repo-name>/`
 
----
+##  Overview
 
-##  Tech Stack
-* **HTML5** (Semantic structure)
-* **CSS3** (Grid, Flexbox, Custom Media Queries, Linear Gradients)
-* **Google Fonts** (Roboto Condensed)
-* **SVG Icons** for sharp resolution across high-DPI screens
+The page consists of the following sections:
 
----
+- **Header** — logo, menu button, social media links
+- **Top (Hero)** — title, tagline, and background car image
+- **Concept** — a short description of the concept car's philosophy
+- **Premier** — information about the CES 2020 presentation
+- **Video** — a block with a video preview and play button
+- **Design (Interior & Exterior)** — a section describing the interior/exterior design, built with CSS Grid
+- **Footer** — privacy policy link, logo, social media links
 
-##  Layout Architecture
-The project demonstrates advanced CSS positioning techniques:
-* **The Hero Section (`.top`):** Uses dynamic height calculation `calc(100vh - 100px)` to flawlessly fill the viewport.
-* **The Design Section (`.design`):** Leverages a robust **4-column CSS Grid** layout that gracefully converts into a single-column block layout on tablet/mobile screens ($<1000\text{px}$).
-* **Adaptive Navigation:** The header and footer utilize `flex-wrap` and CSS `order` property to rearrange layout compositions beautifully on mobile screens ($<640\text{px}$).
+##  Technologies
 
----
- How to Run Locally
+- HTML5
+- CSS3 (Flexbox, CSS Grid, media queries)
+- Google Fonts (`Roboto Condensed`)
 
-Follow these simple steps to get the project up and running on your local machine:
-1. Clone the Repository
+## 📱Responsiveness
 
-Run the following command in your terminal to clone the project:
-Bash
+The layout is adapted for the following breakpoints:
 
-git clone https://github.com/ByteBloom357/AVTR.git
+| Screen width | Behavior |
+|---|---|
+| `≤ 1240px` | Images are constrained in width |
+| `≤ 1000px` | The `design` section switches to a block layout |
+| `≤ 640px` | Header/footer are restructured, spacing and font sizes are reduced |
+| `≤ 590px` | The `premier` section switches to a block layout |
+| `≤ 430px` | Footer content is centered |
 
-2. Navigate to the Project Folder
+## Project Structure
 
-Switch to the project directory:
-Bash
+```
+├── index.html
+├── style/
+│   └── style.css
+├── img/
+│   ├── logo.svg
+│   ├── menu-logoo.svg
+│   ├── twitter.svg
+│   ├── google.svg
+│   ├── facebook.svg
+│   ├── mercedes-icon.svg
+│   ├── top-pg.png
+│   ├── concept.jpg
+│   ├── img-left.jpg
+│   ├── img-right.png
+│   ├── video-img.png
+│   ├── img-top.jpg
+│   ├── img-bottom.png
+│   └── car-main.png
+└── README.md
+```
 
-cd AVTR
+> ⚠️ Make sure all image files referenced in `index.html` (e.g. `img/logo.svg`, `img/concept.jpg`, etc.) actually exist inside an `img/` folder next to `index.html` — otherwise they won't display.
 
-3. Open the Project
+##  Running the Project Locally
 
-    Method 1: Simply locate the index.html file in your folder and double-click it to open it in any web browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   ```
+2. Navigate into the project folder:
+   ```bash
+   cd <repo-name>
+   ```
+3. Open `index.html` in your browser, or run a local server, e.g. via the **Live Server** extension in VS Code.
 
-    Method 2 (Recommended): If you are using VS Code, install the Live Server extension, right-click on index.html, and select "Open with Live Server".
+##  Roadmap
 
-License
+- [ ] Add working logic for the menu button (`.btn-menu`)
+- [ ] Wire up actual video playback in the `.video` block
+- [ ] Fix a noticeable bug in the play-button SVG icon (invalid attributes `fi11`, `xmIns`, and a stray space in the `path` coordinates)
+- [ ] Add `alt` text to images for better accessibility
+- [ ] Optimize images for faster load times
+
+## 📄 License
 
 This project is open-source and available under the MIT License. Feel free to use, modify, and share it!
----
-##  Project Structure
-```text
-├── img/              # Image assets (JPG, PNG, SVG)
-├── style/
-│   └── style.css     # Main stylesheet with media queries
-└── index.html        # Main HTML structure
----
-
-
