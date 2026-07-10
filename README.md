@@ -5,7 +5,7 @@ A responsive single-page layout dedicated to the **Mercedes-Benz VISION AVTR** c
 ##  Demo
 
 > Add your live link here once deployed via GitHub Pages:
-> `https://github.com/ByteBloom357/AVTR/tree/main`
+> `https://github.com/ByteBloom357/AVTR`
 
 ##  Overview
 
@@ -67,7 +67,7 @@ The layout is adapted for the following breakpoints:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ByteBloom357/AVTR/tree/main
+   git clone https://github.com/ByteBloom357/AVTR
    ```
 
 3. Open `index.html` in your browser, or run a local server, e.g. via the **Live Server** extension in VS Code.
