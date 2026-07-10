@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
+    font-size: 16px;
 }
 
 ul {
@@ -17,6 +18,14 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+.section-title {
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F402A2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .header {
@@ -34,7 +43,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 
 .social-list {
@@ -106,14 +115,6 @@ a {
     padding-bottom: 150px;
 }
 
-.concept-title {
-    font-family: serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #F402A2;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
 
 .concept-text {
     font-size: 24px;
@@ -127,14 +128,7 @@ a {
 
 }
 
-.premier-title {
-    font-family: serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #F402A2;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
+
 
 .premier-text {
     font-size: 16px;
@@ -196,16 +190,6 @@ a {
     position: relative;
 }
 
-/* .video-link span::before {
-    content: '';
-    width: 19px;
-    height: 22px;
-    background-image: url('../img/play-img.svg');
-    position: absolute;
-    left: -32px;
-    top: -1px;
-} */
-
 .video-link path {
     transition: all .3s;
 }
@@ -217,4 +201,181 @@ a {
 
 .video-link:hover path {
     fill: #53a1cb;
+}
+/* ---------------*/
+.car-contanier{
+    min-height: calc(100vh - 100px);
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+.design {
+    display: grid;
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 75px 44px;
+    padding-bottom: 170px;
+}
+
+.design-cell-one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.design-img-top {
+    grid-column: 3 / -1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.design-cell-two {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.design-cell-three {
+    grid-column: 4 / -1;
+    grid-row: 2;
+}
+
+.design-cell-three img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.design-cell-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.design-cell-text-bold {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.down-bg{
+    background-image: url(../img/car-main.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* -------------------------------------------------------- */
+
+
+.social-list {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-menu {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.social-link {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.social-link:hover {
+
+    background-color: #C1A1D2;
+}
+.footer {
+    background-color: #070A1B;
+    padding: 130px 0;
+    width: 100%;
+
+}
+
+.footer-inner {
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 10px;
+}
+@media(max-width: 1240px){
+   img{
+    max-width: 100%;
+   } 
+}
+@media(max-width: 1000px){
+    .design{
+        display: block;
+    }
+   
+}
+@media(max-width: 640px){
+    .header-inner,
+    .footer-inner{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .logo{
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+   .top-title{
+    font-size: 64px;
+   }
+   .top{
+    min-height:calc(65vh - 100px) ;
+   }
+   .big-bg{
+    padding-top: 75px;
+   }
+   .concept,
+   .premier,
+   .video,
+   .design{
+    padding-bottom: 75px;
+   }
+   .footer-inner{
+    padding: 75px 10px;
+   }
+   .concept-text{
+    font-size: 18px;
+   }
+   .down-bg{
+    min-height: 40vh;
+   }
+}
+@media(max-width: 590px){
+    .premier{
+        display: block;
+    }
+    .premier-btn{
+        margin-bottom: 25px;
+    }
+     .design-cell-three img{
+        width: 100%;
+    }
+}
+@media(max-width: 430px){
+.footer-inner{
+    justify-content: center;
+}
 }
