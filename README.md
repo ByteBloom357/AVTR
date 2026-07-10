@@ -30,15 +30,6 @@ The project demonstrates advanced CSS positioning techniques:
 * **Adaptive Navigation:** The header and footer utilize `flex-wrap` and CSS `order` property to rearrange layout compositions beautifully on mobile screens ($<640\text{px}$).
 
 ---
-
-##  Project Structure
-```text
-├── img/              # Image assets (JPG, PNG, SVG)
-├── style/
-│   └── style.css     # Main stylesheet with media queries
-└── index.html        # Main HTML structure
----
-
  How to Run Locally
 
 Follow these simple steps to get the project up and running on your local machine:
@@ -65,3 +56,13 @@ cd AVTR
 License
 
 This project is open-source and available under the MIT License. Feel free to use, modify, and share it!
+---
+##  Project Structure
+```text
+├── img/              # Image assets (JPG, PNG, SVG)
+├── style/
+│   └── style.css     # Main stylesheet with media queries
+└── index.html        # Main HTML structure
+---
+
+
